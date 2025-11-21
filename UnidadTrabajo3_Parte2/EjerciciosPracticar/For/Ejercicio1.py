@@ -6,13 +6,11 @@ num = int(input('Dime tu número.\n'))
 numMod = num
 i = 1
 
-if num != 0:
-    while i < num:
-        print(i)
-        numMod = numMod * i
-        i = i + 1
+if num !=0:
 
-    else:
-        print(f'El factorial de {num}! = {numMod}')
+    for _ in range(1, num):
+        numMod = numMod * i
+        i += 1
+    print(f'El factorial de {num}! = {numMod}')
 else:
     print('El número es 0')
