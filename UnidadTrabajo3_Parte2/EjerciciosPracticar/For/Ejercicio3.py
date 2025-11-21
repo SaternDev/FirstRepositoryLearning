@@ -9,8 +9,9 @@ count = 0
 
 numIntroduc = int(input('Dime la cantidad de números a introducir. \n'))
 
-while True:
-    if numIntroduc != 0:
+if numIntroduc != 0:
+
+    for _ in range(1, numIntroduc):
         if count != numIntroduc:
             num = int(input('Dime un número: '))
             count += 1
@@ -22,9 +23,8 @@ while True:
                 numMayor += 1
         else:
             break
-    else:
-        print('Se ha introducido una cantidad de 0 números')
-        break
+else:
+    print('Se ha introducido una cantidad de 0 números')
 
 if numIntroduc != 0:
     print(f'Numeros mayores a 0: {numMayor} \n Numeros menores a 0: {numMenor} \n Numeros iguales a 0: {NumIgual}')
