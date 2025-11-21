@@ -17,5 +17,5 @@ while num != 0:
 #Este if lo tenemos para asegurarnos que no pete si es que escriben 0 al principio del programa
 if num == 0:
     print('No se ejecuta el programa dado que se ha escrito 0 al principio.')
-else:
     print(f'La suma de los numeros es: {suma}, y la media de todos los numeros es: {suma/contNum}')
+    
