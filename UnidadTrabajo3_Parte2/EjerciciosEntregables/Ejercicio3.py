@@ -4,11 +4,11 @@
 
 # No uses listas; solo un contador y cadenas.
 
-hostname = input('Dime un hostname, si quieres que termine el programa pon "FIN"')
+hostname = input('Dime un hostname, si quieres que termine el programa pon "FIN": ')
 count = 0
 
 while hostname != 'FIN':
-    hostname = input('Dime un hostname, si quieres que termine el programa pon "FIN"')
+    hostname = input('Dime un hostname, si quieres que termine el programa pon "FIN": ')
     count += 1
 
 print(f'La cantidad de hostnames es: {count}')
